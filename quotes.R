@@ -23,3 +23,13 @@ p10 <- ggplot(airquality_trimmed, aes(x = Month, y = Ozone, fill = Temp.f)) +
         scale_fill_brewer(palette = "Accent") +
         labs(fill = "Temperature")
 p10
+
+
+
+#######################----ggplot for stack bars
+
+ggplot(test_perce, aes(fill=Mixture, y=Percentage, x=Condition)) + 
+    geom_bar(position="fill", stat="identity")+theme_bw() + 
+scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9","#BEAED4","#FFFF99","#F0027F","#CCCCCC","#666666","#D95F02","#E7298A","#984EA3","#A6CEE3","#377EB8","#FF7F00","#A65628","#999999","#8DA0CB","#FFD92F","#B3DE69","#CCEBC5","#B3B3B3","#BC80BD"))+
+labs(x=NULL, y=NULL)+
+theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank())
