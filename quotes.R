@@ -36,3 +36,7 @@ theme( panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 
 
 barplot(as.matrix(t(CIBERSORT_005)),col=mycol,border = NA,space = 0,ylab = "Percentage",axis.lty = 1,legend("topright",colnames(CIBERSORT_005),fill = mycol,bty="n",xpd = TRUE))
+
+############################
+
+barplot(as.matrix(t(CIBERSORT_005)),col = mycol,border = NA,space = 0,ylab = "Percentage",axis.lty = 1,legend("topright",colnames(CIBERSORT_005),fill=mycol,xpd = TRUE,cex = 0.8))
