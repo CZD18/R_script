@@ -1,3 +1,4 @@
+#From: http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html
 airquality_trimmed <- airquality[which(airquality$Month == "Jul" |
                                        airquality$Month == "Aug" |
                                        airquality$Month == "Sep"), ]
